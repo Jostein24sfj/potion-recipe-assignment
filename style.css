@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.background {
+  background-image: url("./backround.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -10;
+  opacity: 50%;
+}
+
+body {
+  background-color: rgb(53, 52, 52);
+  color: aliceblue;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  min-height: 100vh;
+  width: 100%;
+}
+
+h1 {
+  font-size: 3em;
+  padding: 12px;
+  border-radius: 1px solid black;
+  color: #ffd700;
+  text-shadow: 2px 2px 2px black;
+}
+
+p {
+  font-size: large;
+  padding: 12px;
+  text-shadow: 1px 1px 1px black;
+}
+
+.brewButton {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 24px 24px;
+}
+
+.brewButton button {
+  background-color: #ffd700;
+}
+
+.buttonWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+button {
+  /* font-size: medium; */
+  padding: 16px 24px;
+  background-color: aqua;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+button:hover {
+  background-color: rgb(96, 96, 96);
+  transform: scale(0.95);
+}
+
+button:active {
+  background-color: rgb(71, 71, 71);
+  transform: scale(0.95);
+}
+
+#herbs-btn button {
+  background-color: rgb(75, 212, 56);
+}
+
+#berries-btn button {
+  background-color: crimson;
+}
+
+#mushrooms-btn button {
+  background-color: rgb(184, 157, 101);
+}
+
+#water-btn button {
+  background-color: aqua;
+}
+
+#flowers-btn button {
+  background-color: rgb(195, 36, 134);
+}

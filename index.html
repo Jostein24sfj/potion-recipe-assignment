@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Potion Recipe Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Potion Recipe Game</h1>
+
+    <p>Create a healing potion!</p>
+    <p>You need: 2 Herbs, 1 Berry, and 1 Mushroom.</p>
+    <div class="buttonWrapper">
+      <div id="herbs-btn">
+        <button onclick="addIngredient('herbs')">Herbs(+)</button>
+        <button onclick="decreaseIngredient('herbs')">Herbs(-)</button>
+      </div>
+      <div id="berries-btn">
+        <button onclick="addIngredient('berries')">Berries(+)</button>
+        <button onclick="decreaseIngredient('berries')">Berries(-)</button>
+      </div>
+      <div id="mushrooms-btn">
+        <button onclick="addIngredient('mushrooms')">Mushrooms(+)</button>
+        <button onclick="decreaseIngredient('mushrooms')">Mushrooms(-)</button>
+      </div>
+      <div id="water-btn">
+        <button onclick="addIngredient('water')">Water(+)</button>
+        <button onclick="decreaseIngredient('water')">Water(-)</button>
+      </div>
+      <div id="flowers-btn">
+        <button onclick="addIngredient('flowers')">Flowers(+)</button>
+        <button onclick="decreaseIngredient('flowers')">Flowers(-)</button>
+      </div>
+    </div>
+    <div class="brewButton">
+      <button onclick="checkPotion()">Brew Potion</button>
+    </div>
+    <p>Check the console (F12) to see what's in your cauldron!</p>
+    <div class="background"></div>
+    <script src="index.js"></script>
+  </body>
+</html>
